@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>{{ title }}</title>
 </head>
 <body>
     <h1>LOGO</h1>
     <hr>
+    {% for n in clist%}
+    <div>{{n}}</div>
+    {% endfor %}
 </body>
 </html>

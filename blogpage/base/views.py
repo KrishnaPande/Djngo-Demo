@@ -8,4 +8,12 @@ def about(request):
     return HttpResponse('My name is Krishna')
 
 def page(request):
-    return render(request, "home.html")
+    data = {
+        'title': 'Home Page',
+        'clist': ['C', 'C++', 'java', 'python'],
+        'details':[
+            {'name':'krishna'},
+            {'date':'0610'}
+        ]
+    }
+    return render(request, "home.html", data)
