@@ -6,3 +6,6 @@ def home(request):
 
 def about(request):
     return HttpResponse('My name is Krishna')
+
+def page(request):
+    return render(request, "home.html")
